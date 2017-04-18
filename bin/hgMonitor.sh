@@ -41,6 +41,12 @@ then
   HGJARLIB=`ls "$HGBINDIR"/../target/*.jar`
 fi
 
+if [ ! -d "$HGBINDIR/../logs" ]
+then
+  cd $HGBINDIR/..
+  mkdir logs
+fi
+
 #for i in "$HGBINDIR"/../lib/*.jar
 #do
 #    CLASSPATH="$i:$CLASSPATH"

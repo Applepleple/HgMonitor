@@ -8,20 +8,20 @@ Author : Lei Wang
 Email : wlzxcwork@outlook.com
 
 Goal:
-	GPU is a new computing resource and it's very powerful. Many applications are using GPU as
+    GPU is a new computing resource and it's very powerful. Many applications are using GPU as
 accelerators to get real-time processing ability. Generally, there would be more than one GPU
 residing in a big GPU Cluster. To uniformly distribute tasks among these GPUs, we need to know
 the GPU usage information before the distribution.
 
-	This tool uses NVML + Netty + Spring to provide GPU information with a simple server/client
+    This tool uses NVML + Netty + Spring to provide GPU information with a simple server/client
 model. This is just a POC version, I will keep improving this project.
 
-	Hope it's helpful to you guys.
+    Hope it's helpful to you guys.
 
 How to use:
-	1, Execute command at the root directory of this project :
-	    mvn package
-	2, Then
-	    ./bin/hgMonitor.sh start|stop
+    1, Execute command at the root directory of this project :
+        mvn package
+    2, Then
+       ./bin/hgMonitor.sh start|stop
 
 
