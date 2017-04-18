@@ -26,6 +26,12 @@ fi
 
 HGCFG="$HGCFGDIR/$HGCFG"
 
+if [ ! -d "$HGBINDIR/../logs" ]
+then
+  cd $HGBINDIR/..
+  mkdir logs
+fi
+
 if [ -z $HGPIDFILE ]
 then 
   HGPIDFILE="$HGBINDIR/../logs/hg_deamon.pid"
@@ -39,12 +45,6 @@ fi
 if [ -z $HGJARLIB ]
 then
   HGJARLIB=`ls "$HGBINDIR"/../target/*.jar`
-fi
-
-if [ ! -d "$HGBINDIR/../logs" ]
-then
-  cd $HGBINDIR/..
-  mkdir logs
 fi
 
 #for i in "$HGBINDIR"/../lib/*.jar
